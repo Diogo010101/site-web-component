@@ -1,0 +1,584 @@
+:root{
+    --filme: #d72337;
+    --serietv: #915faf;
+    --games: #82af69;
+}
+
+
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter", sans-serif;
+}
+/*Header*/
+
+body{
+    background-image: url("../assets/img/background_pupli-final.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.cabecalho{
+    background-color: rgb(70, 70, 70);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menu-principal{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+
+
+}
+
+.menu-show{
+    display: none;
+}
+
+.cabecalho img{
+    width: 250px;
+}
+
+.menu{
+    display: none;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+.navegacao{
+    display: block;
+}
+
+.navegacao li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+
+.navegacao li a{
+    text-decoration: none;
+    color: white;
+}
+/*Header fim*/
+
+/*Main*/
+
+.container {
+    margin: 30% auto 0 auto;
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+    width: 90%;
+    text-align: center;
+
+}
+/*Section card-principal*/
+.card-principal{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.card-destaque{
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.card-destaque img{
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.card-destaque h1{
+    text-align: justify;
+    padding:  10px 20px;
+
+}
+
+.card-destaque p{
+    text-align: justify;
+    padding: 10px 20px;
+}
+/*Section card-principal fim*/
+
+
+
+/*section noticias-container*/
+.noticias-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.noticias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.card-noticia{
+    gap: 10px;
+    width: 300px;
+    min-width: 250px;
+    padding: 10px;
+    
+}
+
+.card-noticia img{
+    max-width: 100%;
+    min-width: 220px;
+    border-radius: 10px;
+}
+
+/*Aside mais-vistas*/
+.mais-vistas{
+    padding: 20px;
+    width: 100%;
+
+}
+
+.mais-vistas h1{
+    position: relative;
+    text-transform: capitalize;
+    color: aquamarine;
+    font-size: 2em;
+    text-align: justify;
+    padding: 20px;
+}
+
+.mais-vistas h1 span::after{
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    width: 40%;
+    height: 2px;
+    margin-left: 6px;
+    background: #3bb4b4;
+}
+
+
+.mais-vistas ol li{
+    list-style: none;
+    text-align: justify;
+    padding: 5px 20px;
+    
+}
+
+.mais-vistas ol li span{
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+
+.mais-vistas ol li a{
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 1em;
+    padding: 20px;
+}
+
+
+/*Aside mais-vistas fim*/
+
+/*section noticias-container FIM*/
+
+
+/*Section Criticas*/
+.criticas{
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    background-color: rgb(70, 70, 70);
+    color: white;
+}
+
+.card-criticas{
+    width: 300px;
+    gap: 10px;
+    padding: 20px 10px;
+    text-align: left;
+}
+
+.card-criticas img{
+    border-radius: 10px;
+    width: 100%;
+    min-width: 150px;
+}
+
+.card-criticas span{
+    display: block;
+    color: var(--games);
+    font-weight: bold;
+    font-size: 1.2em;
+    
+}
+
+.card-criticas a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+/*Section criticas fim*/
+
+/*Section mais noticias*/
+
+.noticias-podcast{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.mais-noticias{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.titulo-mais-noticias{
+    position: relative;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: var(--filme);
+}
+
+.titulo-mais-noticias::after {
+    content: "";
+        position: absolute;
+        bottom: 40%;
+        width: 50%;
+        height: 2px;
+        margin-left: 6px;
+        background: var(--filme);
+}
+
+
+.card-mais-noticias{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 300px;
+    padding-top: 20px;
+    
+}
+
+.card-mais-noticias img{
+    width: 100%;
+    min-width: 280px;
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.descricao-mais-noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 20px;
+    
+
+}
+
+.descricao-mais-noticias h1{
+    font-size: 1.2em;
+    color: var(--filme);
+
+}
+
+.descricao-mais-noticias a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+.descricao-mais-noticias p{
+    color: darkgray;
+}
+
+/*Section mais noticias fim*/
+
+/*Section Podcast*/
+
+.podcast{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.titulo-podcast{
+    position: relative;
+    text-align: left;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--serietv);
+    padding: 5px 20px;
+}
+
+
+.titulo-podcast::after {
+    content: "";
+    position: absolute;
+    bottom: 40%;
+    width: 50%;
+    height: 2px;
+    margin-left: 6px;
+    background: var(--serietv);
+}
+
+.card-podcast{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 20px;
+    gap: 10px
+
+}
+
+.card-podcast img{
+    width: 80%;
+    min-width: 180px;
+    border-radius: 10px;
+}
+
+
+.card-podcast h1 {
+    color: var(--serietv);
+    font-size: 1.3em;
+    font-weight: bold;
+    text-transform: capitalize;
+
+}
+
+.card-podcast a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: black;
+
+}
+
+/*Section Podcast Fim*/
+
+/*Mainfim*/
+
+/*Footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(55, 59, 80);
+    height: 100%;
+}
+
+.links-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+
+}
+
+
+.links-footer h1{
+    font-size: 1.5em;
+    color: var(--games);
+}
+
+.links-footer ul{
+    padding: 20px 10px;
+}
+
+.links-footer ul li{
+    list-style: none;
+    margin-top: 10px;
+    
+}
+
+.links-footer ul li a {
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 1.2em;
+    
+
+}
+
+.direitos-reservados{
+    color: lightgray;
+}
+/*Footer fim*/
+
+
+
+/*Media Query para celular */
+
+@media screen and (max-width: 750px) {
+    body {
+        background-image: url("../assets/img/background_pupli-final.jpg");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 300%;
+        background-attachment: fixed;
+    }
+
+        .cabecalho {
+            display: flex;
+            flex-direction: row-reverse;
+ 
+        }
+
+    .menu {
+        display: block;
+        font-size: 1.2em;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: white;
+        cursor: pointer;
+    }
+    .menu-principal{
+        display: none;
+    }
+
+        .navegacao {
+
+            list-style: none;
+            display: inline;
+            padding: 10px;
+            background-color: #d72337;
+        }
+
+
+    .container {
+            margin: 60% auto 0 auto;
+            padding-top: 20px;
+            background-color: white;
+            border-radius: 10px 10px 0px 0px;
+            width: 100%;
+            text-align: center;
+    
+        }
+        .mais-noticias {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 20px 10px;
+                text-align: left;
+                width: 100%;
+                max-width: 320px;
+            }
+
+        .card-mais-noticias {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 300px;
+            padding-top: 20px;
+
+        }
+
+        .card-mais-noticias img {
+            width: 100%;
+            max-width: 320px;
+            border-radius: 10px;
+            object-fit: cover;
+
+        }
+
+        .descricao-mais-noticias {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 0px;
+
+
+        }
+        
+            .podcast {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 20px;
+
+            }
+
+        .card-podcast img {
+            width: 100%;
+            min-width: 180px;
+            border-radius: 10px;
+        }
+
+    
+}
+
+/*Media Query para dispositivos grandes */
+
+
+@media screen and (min-width: 1150px) {
+
+    .mais-vistas {
+            padding: 20px;
+            width: 50%;
+    
+        }
+
+    .mais-noticias {
+        display: flex;
+        flex-direction: column;
+     
+        padding: 20px 10px;
+        text-align: left;
+        width: 50%;
+    }
+
+    .podcast {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding: 20px;
+
+    }
+
+    .card-podcast img {
+        width: 100%;
+        min-width: 180px;
+        border-radius: 10px;
+    }
+    
+}
