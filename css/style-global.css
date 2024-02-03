@@ -2,6 +2,11 @@
     --filme: #d72337;
     --serietv: #915faf;
     --games: #82af69;
+    --hq-livros: #f59b37;
+    --animemanga: #D241A5;
+    --ciencia-tecnologia: #286ED2;
+    --outros: #3BB4B4;
+    --fundoescuro: #464646;
 }
 
 
@@ -21,59 +26,10 @@ body{
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+    background-color: var(--fundoescuro);
 }
 
-.cabecalho{
-    background-color: rgb(70, 70, 70);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-}
 
-.menu-principal{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding: 10px 0;
-
-
-}
-
-.menu-show{
-    display: none;
-}
-
-.cabecalho img{
-    width: 250px;
-}
-
-.menu{
-    display: none;
-    font-size: 1.2em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    color: white;
-    cursor: pointer;
-}
-.navegacao{
-    display: block;
-}
-
-.navegacao li{
-    list-style: none;
-    display: inline;
-    padding: 10px;
-}
-
-.navegacao li a{
-    text-decoration: none;
-    color: white;
-}
-/*Header fim*/
 
 /*Main*/
 
@@ -87,13 +43,43 @@ body{
 
 }
 /*Section card-principal*/
+
+.card-principal0{
+    text-align: left;
+    padding: 20px 20px;
+}
+
+.card-principal0-h1 {
+    position: relative;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size: 2.5em;
+    color: var(--outros)
+
+}
+
+.card-principal0-h1::after{
+    content: "";
+        position: absolute;
+        bottom: 40%;
+        width: 40%;
+        height: 2px;
+        margin-left: 6px;
+        background: var(--outros)
+}
+
+
 .card-principal{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+    text-align: left;
     margin-top: 25px;
-    gap: 10px;
+    gap: 30px;
 }
+
+
 
 .card-destaque{
     width: 100%;
@@ -102,26 +88,34 @@ body{
 }
 
 .card-destaque img{
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     border-radius: 10px;
 }
 
 .card-destaque h1{
-    text-align: justify;
-    padding:  10px 20px;
+    text-align: left;
+    padding:  10px 0px;
+    color: var(--outros);
+    font-size: 1.2em;
+
 
 }
 
 .card-destaque p{
-    text-align: justify;
-    padding: 10px 20px;
+    text-align: left;
+    padding: 10px 0px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 /*Section card-principal fim*/
 
 
 
 /*section noticias-container*/
+
+
+
 .noticias-container{
     margin-top: 20px;
     display: flex;
@@ -144,13 +138,29 @@ body{
     width: 300px;
     min-width: 250px;
     padding: 10px;
-    
+
 }
+
 
 .card-noticia img{
     max-width: 100%;
     min-width: 220px;
     border-radius: 10px;
+}
+
+.card-noticia h1{
+    text-align: left;
+    padding: 5px 0;
+    font-size: 1em;
+    color: var(--filme);
+    font-weight: bold;
+}
+
+.card-noticia p {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 1.3em;
+    font-weight: bold;
 }
 
 /*Aside mais-vistas*/
@@ -166,7 +176,7 @@ body{
     color: aquamarine;
     font-size: 2em;
     text-align: justify;
-    padding: 20px;
+    padding:  20px;
 }
 
 .mais-vistas h1 span::after{
@@ -458,35 +468,10 @@ footer{
         background-attachment: fixed;
     }
 
-        .cabecalho {
-            display: flex;
-            flex-direction: row-reverse;
- 
-        }
-
-    .menu {
-        display: block;
-        font-size: 1.2em;
-        font-weight: bolder;
-        text-transform: uppercase;
-        color: white;
-        cursor: pointer;
-    }
-    .menu-principal{
-        display: none;
-    }
-
-        .navegacao {
-
-            list-style: none;
-            display: inline;
-            padding: 10px;
-            background-color: #d72337;
-        }
 
 
     .container {
-            margin: 60% auto 0 auto;
+            margin: 50% auto;
             padding-top: 20px;
             background-color: white;
             border-radius: 10px 10px 0px 0px;
