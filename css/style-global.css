@@ -9,6 +9,28 @@
     --fundoescuro: #464646;
 }
 
+.filmes{
+    color:var(--filme)
+}
+.serietv{
+    color: var(--serietv)
+}
+.games{
+    color: var(--games)
+}
+.hqlivros{
+    color: var(--hq-livros)
+}
+.animemanga{
+    color: var(--animemanga)
+}
+.cienciatecnologia{
+    color: var(--ciencia-tecnologia)
+}
+.outros{
+    color: var(--outros)
+}
+
 
 
 *{
@@ -69,45 +91,11 @@ body{
 }
 
 
-.card-principal{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-    margin-top: 25px;
-    gap: 30px;
-}
 
 
 
-.card-destaque{
-    width: 100%;
-    max-width: 600px;
-    
-}
-
-.card-destaque img{
-    width: 100%;
-    max-width: 600px;
-    border-radius: 10px;
-}
-
-.card-destaque h1{
-    text-align: left;
-    padding:  10px 0px;
-    color: var(--outros);
-    font-size: 1.2em;
 
 
-}
-
-.card-destaque p{
-    text-align: left;
-    padding: 10px 0px;
-    font-size: 1.5em;
-    font-weight: bold;
-}
 /*Section card-principal fim*/
 
 
@@ -460,6 +448,7 @@ footer{
 /*Media Query para celular */
 
 @media screen and (max-width: 750px) {
+    
     body {
         background-image: url("../assets/img/background_pupli-final.jpg");
         background-repeat: no-repeat;
