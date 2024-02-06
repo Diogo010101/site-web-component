@@ -86,6 +86,7 @@ body{
         bottom: 40%;
         width: 40%;
         height: 2px;
+        background-color: red;
         margin-left: 6px;
         background: var(--outros)
 }
@@ -104,102 +105,6 @@ body{
 
 
 
-.noticias-container{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.noticias{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 50%;
-    justify-content: center;
-}
-
-.card-noticia{
-    gap: 10px;
-    width: 300px;
-    min-width: 250px;
-    padding: 10px;
-
-}
-
-
-.card-noticia img{
-    max-width: 100%;
-    min-width: 220px;
-    border-radius: 10px;
-}
-
-.card-noticia h1{
-    text-align: left;
-    padding: 5px 0;
-    font-size: 1em;
-    color: var(--filme);
-    font-weight: bold;
-}
-
-.card-noticia p {
-    text-align: left;
-    padding: 5px 0;
-    font-size: 1.3em;
-    font-weight: bold;
-}
-
-/*Aside mais-vistas*/
-.mais-vistas{
-    padding: 20px;
-    width: 100%;
-
-}
-
-.mais-vistas h1{
-    position: relative;
-    text-transform: capitalize;
-    color: aquamarine;
-    font-size: 2em;
-    text-align: justify;
-    padding:  20px;
-}
-
-.mais-vistas h1 span::after{
-    content: "";
-    position: absolute;
-    bottom: 40%;
-    width: 40%;
-    height: 2px;
-    margin-left: 6px;
-    background: #3bb4b4;
-}
-
-
-.mais-vistas ol li{
-    list-style: none;
-    text-align: justify;
-    padding: 5px 20px;
-    
-}
-
-.mais-vistas ol li span{
-    font-size: 2em;
-    font-weight: bold;
-    padding: 0px 5px;
-}
-
-.mais-vistas ol li a{
-    text-decoration: none;
-    line-height: 1em;
-    font-size: 1em;
-    padding: 20px;
-}
-
-
-/*Aside mais-vistas fim*/
 
 /*section noticias-container FIM*/
 
@@ -212,6 +117,7 @@ body{
     overflow-y: hidden;
     background-color: rgb(70, 70, 70);
     color: white;
+
 }
 
 .card-criticas{
@@ -248,7 +154,8 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -454,7 +361,7 @@ footer{
         background-repeat: no-repeat;
         background-position: top center;
         background-size: 300%;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
 
@@ -526,16 +433,9 @@ footer{
 
 @media screen and (min-width: 1150px) {
 
-    .mais-vistas {
-            padding: 20px;
-            width: 50%;
-    
-        }
 
     .mais-noticias {
         display: flex;
-        flex-direction: column;
-     
         padding: 20px 10px;
         text-align: left;
         width: 50%;

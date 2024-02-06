@@ -73,11 +73,9 @@ class Cardprincipal extends HTMLElement{
 
         
         const objTitulo1 = tituloCardDestaque1
-        console.log(objTitulo1)
         objTitulo1.classList.add(`${tagCardDestaque1.textContent}`);
 
         const objTitulo2 = tituloCardDestaque2
-        console.log(objTitulo2)
         objTitulo2.classList.add(`${tagCardDestaque2.textContent}`);
 
         return componentRoot
