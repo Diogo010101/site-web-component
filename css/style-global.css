@@ -53,6 +53,8 @@ body{
 
 
 
+
+
 /*Main*/
 
 .container {
@@ -109,44 +111,7 @@ body{
 /*section noticias-container FIM*/
 
 
-/*Section Criticas*/
-.criticas{
-    display: flex;
-    flex-flow: row nowrap;
-    overflow: scroll;
-    overflow-y: hidden;
-    background-color: rgb(70, 70, 70);
-    color: white;
 
-}
-
-.card-criticas{
-    width: 300px;
-    gap: 10px;
-    padding: 20px 10px;
-    text-align: left;
-}
-
-.card-criticas img{
-    border-radius: 10px;
-    width: 100%;
-    min-width: 150px;
-}
-
-.card-criticas span{
-    display: block;
-    color: var(--games);
-    font-weight: bold;
-    font-size: 1.2em;
-    
-}
-
-.card-criticas a{
-    text-decoration: none;
-    color: white;
-    font-size: 1.3em;
-}
-/*Section criticas fim*/
 
 /*Section mais noticias*/
 
