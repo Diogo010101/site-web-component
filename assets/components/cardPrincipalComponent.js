@@ -19,14 +19,24 @@ class Cardprincipal extends HTMLElement{
 
             const cardDestaque1 = document.createElement("div");
             cardDestaque1.setAttribute("class","card-destaque");
-                const imagemCardDestaque1 = document.createElement("img");
-                imagemCardDestaque1.src = this.getAttribute("src-img-card-destaque1");
-                imagemCardDestaque1.alt = this.getAttribute("alt-card-destaque1");
+
+
+                const linkImagem1 = document.createElement("a");
+                linkImagem1.href = this.getAttribute("link-imagem1") || "#";
+
+                    const imagemCardDestaque1 = document.createElement("img");
+                    imagemCardDestaque1.src = this.getAttribute("src-img-card-destaque1");
+                    imagemCardDestaque1.alt = this.getAttribute("alt-card-destaque1");
+
+                linkImagem1.appendChild(imagemCardDestaque1);
 
                 const tituloCardDestaque1 = document.createElement("h1");
                 tituloCardDestaque1.textContent = this.getAttribute("title1") || "Titulo";
 
-                const descricaoCardDestaque1 = document.createElement("p");
+
+
+                const descricaoCardDestaque1 = document.createElement("a");
+                descricaoCardDestaque1.href = this.getAttribute("link-descricao1") || "#";
                 descricaoCardDestaque1.textContent = this.getAttribute("description1") || "Descrição...";
 
                 const tagCardDestaque1 = document.createElement("span");
@@ -36,7 +46,7 @@ class Cardprincipal extends HTMLElement{
 
 
 
-            cardDestaque1.appendChild(imagemCardDestaque1);
+            cardDestaque1.appendChild(linkImagem1);
             cardDestaque1.appendChild(tituloCardDestaque1);
             cardDestaque1.appendChild(descricaoCardDestaque1);
             cardDestaque1.appendChild(tagCardDestaque1);
@@ -45,14 +55,21 @@ class Cardprincipal extends HTMLElement{
 
             const cardDestaque2 = document.createElement("div");
             cardDestaque2.setAttribute("class", "card-destaque");
-                const imagemCardDestaque2 = document.createElement("img");
-                imagemCardDestaque2.src = this.getAttribute("src-img-card-destaque2");
-                imagemCardDestaque2.alt = this.getAttribute("alt-card-destaque2");
+
+                const linkImagem2 = document.createElement("a");
+                linkImagem2.href = this.getAttribute("link-imagem2") || "#";
+                    const imagemCardDestaque2 = document.createElement("img");
+                    imagemCardDestaque2.src = this.getAttribute("src-img-card-destaque2");
+                    imagemCardDestaque2.alt = this.getAttribute("alt-card-destaque2");
+
+                linkImagem2.appendChild(imagemCardDestaque2);
 
                 const tituloCardDestaque2 = document.createElement("h1");
                 tituloCardDestaque2.textContent = this.getAttribute("title2") || "Titulo";
 
-                const descricaoCardDestaque2 = document.createElement("p");
+
+                const descricaoCardDestaque2 = document.createElement("a");
+                descricaoCardDestaque2.href = this.getAttribute("link-descricao2") || "#";
                 descricaoCardDestaque2.textContent = this.getAttribute("description2") || "Descrição...";
 
                 const tagCardDestaque2 = document.createElement("span");
@@ -62,7 +79,7 @@ class Cardprincipal extends HTMLElement{
 
 
 
-            cardDestaque2.appendChild(imagemCardDestaque2);
+            cardDestaque2.appendChild(linkImagem2);
             cardDestaque2.appendChild(tituloCardDestaque2);
             cardDestaque2.appendChild(descricaoCardDestaque2);
             cardDestaque2.appendChild(tagCardDestaque2);
@@ -147,11 +164,13 @@ class Cardprincipal extends HTMLElement{
 
             }
 
-            .card-destaque p{
+            .card-destaque a{
                 text-align: left;
                 padding: 5px 0px;
                 font-size: 1.5em;
                 font-weight: bold;
+                text-decoration: none;
+                color: black;
             }
 
             .card-destaque span{
