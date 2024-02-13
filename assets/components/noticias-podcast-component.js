@@ -246,7 +246,7 @@ class NoticiaPodcast extends HTMLElement {
                 linkImgPodcast.href = this.getAttribute("url-link-img-podcast") || "#";
 
                     const imgPodcast = document.createElement("img");
-                    imgPodcast.src = this.getAttribute("url-img-podcast");
+                    imgPodcast.src = this.getAttribute("url-img-podcast") || "./assets/img/default-podcast.jpg";
                     imgPodcast.alt = this.getAttribute("alt-img-podcast") || "Imagem aqui";
                 linkImgPodcast.appendChild(imgPodcast);
 
@@ -270,7 +270,7 @@ class NoticiaPodcast extends HTMLElement {
             linkImgPodcast2.href = this.getAttribute("url-link-img-podcast2") || "#";
 
             const imgPodcast2 = document.createElement("img");
-            imgPodcast2.src = this.getAttribute("url-img-podcast2");
+            imgPodcast2.src = this.getAttribute("url-img-podcast2") || "./assets/img/default-podcast.jpg";
             imgPodcast2.alt = this.getAttribute("alt-img-podcast2") || "Imagem aqui";
             linkImgPodcast2.appendChild(imgPodcast2);
 
@@ -294,7 +294,7 @@ class NoticiaPodcast extends HTMLElement {
             linkImgPodcast3.href = this.getAttribute("url-link-img-podcast3") || "#";
 
             const imgPodcast3 = document.createElement("img");
-            imgPodcast3.src = this.getAttribute("url-img-podcast3");
+            imgPodcast3.src = this.getAttribute("url-img-podcast3") || "./assets/img/default-podcast.jpg";
             imgPodcast3.alt = this.getAttribute("alt-img-podcast3") || "Imagem aqui";
             linkImgPodcast3.appendChild(imgPodcast3);
 
@@ -429,8 +429,9 @@ class NoticiaPodcast extends HTMLElement {
 }
 
 .card-mais-noticias img{
-    width: 100%;
+    width: 280px;
     min-width: 280px;
+    height: 190px;
     border-radius: 10px;
     object-fit: cover;
 
@@ -549,26 +550,27 @@ class NoticiaPodcast extends HTMLElement {
 
         .mais-noticias {
                 display: flex;
-                flex-direction: column;
+                flex-direction: row;
+                flex-wrap: wrap;
                 justify-content: center;
                 padding: 20px 10px;
                 text-align: left;
                 width: 100%;
-                max-width: 320px;
             }
 
         .card-mais-noticias {
             display: flex;
             flex-direction: column;
             width: 100%;
-            max-width: 300px;
+            object-fit: cover;
             padding-top: 20px;
 
         }
 
         .card-mais-noticias img {
             width: 100%;
-            max-width: 320px;
+            min-width: 320px;
+            height: 280px;
             border-radius: 10px;
             object-fit: cover;
 
@@ -595,6 +597,9 @@ class NoticiaPodcast extends HTMLElement {
             width: 100%;
             min-width: 180px;
             border-radius: 10px;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
         }
 
     
@@ -623,7 +628,9 @@ class NoticiaPodcast extends HTMLElement {
     .card-podcast img {
         width: 100%;
         min-width: 180px;
+        height: 304px;
         border-radius: 10px;
+        object-fit: cover;
     }
     
 }

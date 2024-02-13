@@ -1,3 +1,6 @@
+
+
+
 class Cardprincipal extends HTMLElement{
     constructor(){
         super()
@@ -7,8 +10,6 @@ class Cardprincipal extends HTMLElement{
         const shadow = this.attachShadow({mode: "open"});
         shadow.appendChild(this.build());
         shadow.appendChild(this.styles());
-
-
 
 
     }
@@ -95,7 +96,10 @@ class Cardprincipal extends HTMLElement{
         const objTitulo2 = tituloCardDestaque2
         objTitulo2.classList.add(`${tagCardDestaque2.textContent}`);
 
+        
+
         return componentRoot
+        
     }
     styles(){
         const style = document.createElement("style");
@@ -153,6 +157,7 @@ class Cardprincipal extends HTMLElement{
                 width: 100%;
                 max-width: 600px;
                 border-radius: 10px;
+                box-shadow: 3px 2px 3px rgba(0,0,0,0.5);
             }
 
             .card-destaque h1{
@@ -179,6 +184,13 @@ class Cardprincipal extends HTMLElement{
         `
         return style
     }
+
+
+
+    
 }
 
+
+
 customElements.define("card-principal", Cardprincipal);
+

@@ -380,22 +380,28 @@ class Noticias extends HTMLElement{
     width: 300px;
     min-width: 250px;
     padding: 10px;
+    
 
 }
 
 
 .card-noticia img{
-    max-width: 100%;
+    width: 100%;
     min-width: 220px;
+    height: 180px;
     border-radius: 10px;
+    box-shadow: 3px 2px 3px rgba(0,0,0,0.5);
+    object-fit: cover;
+
 }
 
 .card-noticia h1{
+    text-transform: uppercase;
+    font-weight: bolder;
     text-align: left;
     padding: 5px 0;
     font-size: 1em;
     color: var(--filme);
-    font-weight: bold;
 }
 
 .card-noticia h1 a{
